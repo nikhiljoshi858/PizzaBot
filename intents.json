@@ -1,0 +1,63 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?", "Welcome", "Hi there"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Thank you", "cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["See you soon", "Thank you for using our service", "Goodbye!", "Visit again!"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["You can call me PizzaBot", "I'm PizzaBot!", "My name is PizzaBot"],
+         "context_set": ""
+        },
+        {"tag": "shop",
+         "patterns": ["Whats on the menu", "Can I get something to eat", "I would like to buy something", "What do you have"],
+         "responses": ["We have pizzas on the menu", "We have pizzas.", "Would you like to have a pizza?"],
+         "context_set": ""
+        },
+        {"tag": "hours",
+         "patterns": ["When are you guys open", "What are your working hours", "When is the shop open?"],
+         "responses": ["We are open 11am to 11pm everyday."],
+         "context_set": ""
+        },
+        {"tag": "pizza",
+         "patterns": ["Which pizzas do you have", "What pizza do you have"],
+         "responses": ["We sell only veg pizza"],
+         "context_set": ""
+        },
+        {"tag": "crust",
+         "patterns": ["Which crust do you have", "Which is the crust that you have"],
+         "responses": ["We have Cheese Burst, Fresh Pan and thin crust pizzas"],
+         "context_set": ""
+        },
+        {"tag": "topping",
+         "patterns": ["Which toppings do you have", "What toppings do you have"],
+         "responses": ["We have tomato, onion, capsicum, mushroom and paneer toppings"],
+         "context_set": ""
+        },
+        {"tag": "order",
+         "patterns": ["Order me a tomato pizza", "Order me a mushroom pizza", "Order me a onion pizza", "Order me a capsicum pizza", "Order me a paneer pizza", "A tomato pizza please", "A mushroom pizza for me", "An onion pizza for me", "A capsicum pizza please", "I want a paneer pizza", "I want an onion pizza", "I want a mushroom pizza", "I want a tomato pizza", "I want a capsicum pizza"],
+         "responses": ["Ok!", "Anything else?", "Noted!"],
+         "context_set": ""
+        },
+        {"tag": "sides",
+         "patterns": ["Do you sell any sides", "Which sides do you have", "What sides do you have", "Can I have a side"],
+         "responses": ["We have Coke, Cheesy Garlic Breadsticks, Chocolava Cake and Butterscotch Mousse cake"],
+         "context_set": ""
+        },
+        {"tag": "side-order",
+         "patterns": ["Order me a Coke", "Order me a Garlic Breadsticks", "Order me a Chocolava cake", "Order me a Butterscotch Mousse cake", "A Butterscotch Mousse cake please", "A Coke for me", "A chocolava cake for me", "garlic breadsticks please", "I want a Butterscotch Mousse cake", "I want Coke", "I want a Chocolava cake", "I want garlic breadsticks"],
+         "responses": ["Thank You!", "Noted!"],
+         "context_set": ""
+        },
+        {"tag": "thanks",
+         "patterns": ["Thats it", "Thank You", "Im done!", "That's enough"],
+         "responses": ["Your order is on the way. Thanks for choosing us!!"],
+         "context_set": ""
+        }      
+   ]
+}
