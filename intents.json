@@ -1,11 +1,11 @@
 {"intents": [
         {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Hello there", "Good day", "Whats up"],
          "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?", "Welcome", "Hi there"],
          "context_set": ""
         },
         {"tag": "goodbye",
-         "patterns": ["Thank you", "cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "patterns": ["Thank you", "Cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
          "responses": ["See you soon", "Thank you for using our service", "Goodbye!", "Visit again!"],
          "context_set": ""
         },
@@ -15,7 +15,8 @@
          "context_set": ""
         },
         {"tag": "shop",
-         "patterns": ["Whats on the menu", "Can I get something to eat", "I would like to buy something", "What do you have"],
+         "patterns": ["Whats on the menu", "Can I get something to eat", "I would like to buy something", "What do you have",
+       "I am hungry", "Do you have something to eat?", "I want to eat something"],
          "responses": ["We have pizzas on the menu", "We have pizzas.", "Would you like to have a pizza?"],
          "context_set": ""
         },
@@ -25,23 +26,26 @@
          "context_set": ""
         },
         {"tag": "pizza",
-         "patterns": ["Which pizzas do you have", "What pizza do you have"],
-         "responses": ["We sell only veg pizza"],
+         "patterns": ["Ok! I will have a pizza", "Which pizzas do you have", "What pizza do you have"],
+         "responses": ["We have the following pizzas available:\nToppings :\n1. Capsicum\n2. Tomato\n3. Mushroom\n4. Onion\n5. Paneer\n\nCrusts:\n1. Thin Crust\n2. Fresh pan\n3. Cheese Burst\n\nSides:\n1. Coke\n2. Chocolava Cake\n3. Butterscotch Mouse Cake\n4. Cheesy Garlic Bread\n\nPlease select your choices in this order."],
          "context_set": ""
         },
         {"tag": "crust",
          "patterns": ["Which crust do you have", "Which is the crust that you have"],
-         "responses": ["We have Cheese Burst, Fresh Pan and thin crust pizzas"],
+         "responses": ["We have Cheese Burst, Fresh Pan and Thin Crust pizzas"],
          "context_set": ""
         },
         {"tag": "topping",
          "patterns": ["Which toppings do you have", "What toppings do you have"],
-         "responses": ["We have tomato, onion, capsicum, mushroom and paneer toppings"],
+         "responses": ["We have Tomato, Onion, Capsicum, Mushroom and Paneer toppings"],
          "context_set": ""
         },
         {"tag": "order",
-         "patterns": ["Order me a tomato pizza", "Order me a mushroom pizza", "Order me a onion pizza", "Order me a capsicum pizza", "Order me a paneer pizza", "A tomato pizza please", "A mushroom pizza for me", "An onion pizza for me", "A capsicum pizza please", "I want a paneer pizza", "I want an onion pizza", "I want a mushroom pizza", "I want a tomato pizza", "I want a capsicum pizza"],
-         "responses": ["Ok!", "Anything else?", "Noted!"],
+         "patterns": ["Order me a tomato pizza", "Order me a mushroom pizza", "Order me a onion pizza", "Order me a capsicum pizza",
+                "Order me a paneer pizza", "A tomato pizza please", "A mushroom pizza for me", "An onion pizza for me",
+                "A capsicum pizza please", "I want a paneer pizza", "I want an onion pizza", "I want a mushroom pizza",
+                "I want a tomato pizza", "I want a capsicum pizza"],
+         "responses": ["Do you want any sides?"],
          "context_set": ""
         },
         {"tag": "sides",
@@ -50,14 +54,26 @@
          "context_set": ""
         },
         {"tag": "side-order",
-         "patterns": ["Order me a Coke", "Order me a Garlic Breadsticks", "Order me a Chocolava cake", "Order me a Butterscotch Mousse cake", "A Butterscotch Mousse cake please", "A Coke for me", "A chocolava cake for me", "garlic breadsticks please", "I want a Butterscotch Mousse cake", "I want Coke", "I want a Chocolava cake", "I want garlic breadsticks"],
+         "patterns": ["Order me a Coke", "Order me a Garlic Breadsticks", "Order me a Chocolava cake", "Order me a Butterscotch Mousse cake",
+                "A Butterscotch Mousse cake please", "A Coke for me", "A chocolava cake for me", "garlic breadsticks please",
+                "I want a Butterscotch Mousse cake", "I want Coke", "I want a Chocolava cake", "I want garlic breadsticks"],
          "responses": ["Thank You!", "Noted!"],
          "context_set": ""
         },
         {"tag": "thanks",
-         "patterns": ["Thats it", "Thank You", "Im done!", "That's enough"],
-         "responses": ["Your order is on the way. Thanks for choosing us!!"],
+         "patterns": ["No", "Thats it", "Thank You", "Im done!", "That's enough"],
+         "responses": ["Your order will be delivered on the default address. Thanks for choosing us!!"],
          "context_set": ""
-        }      
+        },
+        {"tag": "No",
+       "patterns": ["No"],
+       "responses": ["Your order will be delivered on the default address. Thanks for choosing us!!"],
+       "context_set": ""
+       },
+       {"tag": "Yes",
+       "patterns": ["Yes"],
+       "responses": ["Please select an item on the menu!"],
+       "context_set": ""
+       }
    ]
 }
